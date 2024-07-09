@@ -3,6 +3,4 @@
  *
  * @see dev.mccue.forever.For.ever
  */
-module dev.mccue.forever {
-    exports dev.mccue.forever;
-}
+package dev.mccue.forever;
