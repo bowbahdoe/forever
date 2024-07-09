@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ForeverTest {
@@ -24,6 +26,21 @@ public class ForeverTest {
 
         Thread.sleep(Duration.of(1, ChronoUnit.SECONDS));
         assertTrue(t.isAlive());
+    }
+
+    @Test
+    public void forEverRunsCode() throws InterruptedException {
+        AtomicInteger i = new AtomicInteger();
+        var t = Thread.startVirtualThread(() -> {
+            For.ever(i::getAndIncrement);
+        });
+
+        assertTrue(t.isAlive());
+
+        Thread.sleep(Duration.of(1, ChronoUnit.SECONDS));
+        assertTrue(t.isAlive());
+
+        assertNotEquals(0, i.get());
     }
 
     @Test
