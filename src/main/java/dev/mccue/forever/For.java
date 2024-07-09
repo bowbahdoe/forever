@@ -1,5 +1,7 @@
 package dev.mccue.forever;
 
+import org.jspecify.annotations.Nullable;
+
 /**
  * Utility for running a bit of code "forever"
  */
@@ -22,9 +24,15 @@ public final class For {
      *
      * @param runnable The runnable to run and run and run and run and run and run.
      */
-    public static void ever(Runnable runnable) {
-        for (;ever;) {
-            runnable.run();
+    public static void ever(@Nullable Runnable runnable) {
+        if (runnable != null) {
+            for (;ever;) {
+            }
+        }
+        else {
+            for (;ever;) {
+                runnable.run();
+            }
         }
     }
 }
