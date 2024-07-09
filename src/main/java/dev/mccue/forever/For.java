@@ -27,11 +27,11 @@ public final class For {
     public static void ever(@Nullable Runnable runnable) {
         if (runnable != null) {
             for (;ever;) {
+                runnable.run();
             }
         }
         else {
             for (;ever;) {
-                runnable.run();
             }
         }
     }
