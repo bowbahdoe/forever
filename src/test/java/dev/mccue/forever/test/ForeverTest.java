@@ -25,4 +25,17 @@ public class ForeverTest {
         Thread.sleep(Duration.of(1, ChronoUnit.SECONDS));
         assertTrue(t.isAlive());
     }
+
+    @Test
+    public void forEverIsAtLeastASecondAndNullSafe() throws InterruptedException {
+        var t = Thread.startVirtualThread(() -> {
+            For.ever(null);
+        });
+
+        assertTrue(t.isAlive());
+
+        Thread.sleep(Duration.of(1, ChronoUnit.SECONDS));
+        assertTrue(t.isAlive());
+    }
+
 }
