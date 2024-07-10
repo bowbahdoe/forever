@@ -1,6 +1,6 @@
 # Forever
 
-<img src="./assets/forever_dude.png"></img>
+<img height=300 src="./assets/forever_dude.png"></img>
 
 😊 Fluent 😊, ✨Modern ✨, and 🚀 Blazing Fast 🚀endless loops, made easy.
 
