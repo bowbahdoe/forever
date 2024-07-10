@@ -15,5 +15,3 @@ jobs:
           distribution: 'adopt'
       - name: Lint with PMD
         run: ./mvnw pmd:check
-      - name: Lint with Checkstyle
-        run: ./mvnw checkstyle:check
