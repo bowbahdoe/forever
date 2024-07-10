@@ -1,5 +1,9 @@
 # Forever
 
+[![JUnit](https://github.com/bowbahdoe/forever/actions/workflows/test.yml/badge.svg)](https://github.com/bowbahdoe/forever/actions/workflows/test.yml)
+[![PMD](https://github.com/bowbahdoe/forever/actions/workflows/pmd.yml/badge.svg)](https://github.com/bowbahdoe/forever/actions/workflows/pmd.yml)
+[![Checkstyle](https://github.com/bowbahdoe/forever/actions/workflows/checkstyle.yml/badge.svg)](https://github.com/bowbahdoe/forever/actions/workflows/checkstyle.yml)
+
 <img height=300 src="./assets/forever_dude.png"></img>
 
 😊 Fluent 😊, ✨Modern ✨, and 🚀 Blazing Fast 🚀endless loops, made easy.
