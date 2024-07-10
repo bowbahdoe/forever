@@ -33,13 +33,7 @@ public final class For {
             "checkstyle:EmptyBlock"
     })
     public static void ever(final @Nullable Runnable runnable) {
-        if (runnable != null) {
-            for (;ever;) {
-                runnable.run();
-            }
-        } else {
-            for (;ever;) {
-            }
-        }
+        if (runnable != null) for (;ever;) runnable.run();
+        else for (;ever;);
     }
 }
