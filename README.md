@@ -1,5 +1,7 @@
 # Forever
 
+<a href="/assets/forever_dude.png"></a>
+
 😊 Fluent 😊, ✨Modern ✨, and 🚀 Blazing Fast 🚀endless loops, made easy.
 
 Requires Java 22 or better.
