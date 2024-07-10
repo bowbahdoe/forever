@@ -6,7 +6,8 @@
 
 Requires Java 22 or better.
 
-## 
+## Get it
+
 ```gradle
 implementation('dev.mccue:forever:2024.07.09')
 ```
