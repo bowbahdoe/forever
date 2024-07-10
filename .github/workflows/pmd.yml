@@ -1,4 +1,4 @@
-name: Lints
+name: PMD
 
 on: [push]
 
