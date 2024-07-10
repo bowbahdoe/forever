@@ -6,8 +6,7 @@ import org.jspecify.annotations.Nullable;
  * Utility for running a bit of code "forever".
  */
 public final class For {
-    private For() {
-    }
+    private For() {}
 
     /**
      * Equivalent to {@literal true}.
@@ -33,7 +32,6 @@ public final class For {
             "checkstyle:EmptyBlock"
     })
     public static void ever(final @Nullable Runnable runnable) {
-        if (runnable != null) for (;ever;) runnable.run();
-        else for (;ever;);
+        for (;ever;) if (runnable != null) runnable.run();
     }
 }
