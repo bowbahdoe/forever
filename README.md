@@ -88,7 +88,7 @@ void main() {
 
 ## Get Involved
 
-* Learn how to [contribute](https://thesatanictemple.com/pages/donate)
+* Learn how to [contribute](https://timetraveler.ytmnd.com/)
 * See [issues](https://web.archive.org/web/20160112193916/http://timecube.com/) for issues you can help with
 
 ## Stay Informed
